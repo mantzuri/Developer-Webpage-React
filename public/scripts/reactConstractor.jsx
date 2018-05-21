@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Content from "./content.js";
-import $ from 'jquery';
 import registerServiceWorker from "./registerServiceWorker";
 
 function FeaturedPost(props) {
