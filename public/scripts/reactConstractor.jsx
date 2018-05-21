@@ -290,7 +290,6 @@ class App extends React.Component {
 		setTimeout(function() {
 			fillProgressBars();
 		}, 1000);
-		registerVisitor();
 	}
 
 	render() {
@@ -305,11 +304,5 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(<TopBar />, document.getElementById("header"));
-
-function registerVisitor() {
-	$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-  		console.log(JSON.stringify(data, null, 2));
-	});
-}
 
 registerServiceWorker();
